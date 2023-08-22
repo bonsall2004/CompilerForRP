@@ -31,12 +31,15 @@ namespace Grammar
     _or,
     _xor,
 
-    // Data Types
+    // Number Types
+    _typedef,
+    number_literal,
     int_literal,
     float_literal,
-    string_literal,
-    void_literal,
+    _typename,
 
+    void_literal,
+    string_literal,
     // Invocations 
     _return,
     _exit,

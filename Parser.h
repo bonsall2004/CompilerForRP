@@ -3,14 +3,15 @@
 #include "Grammar.h"
 #include "Lexer.h"
 
-struct ParseItem
+struct ParsedItem
 {
-  Grammar::ValidTokens Token;
-  std::optional<std::vector<std::string>> Arguments;
+  Grammar::ValidTokens Type;
+  std::optional<std::vector<Token>> Arguments;
 };
 
 class Parser
 {
   private:
     std::vector<Token> tokens;
+    std::vector<ParsedItem> Parse();
 };

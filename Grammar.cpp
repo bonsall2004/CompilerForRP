@@ -1,11 +1,17 @@
+#include <vector>
 #include "Grammar.h"
 
 namespace Grammar
 {
+  struct TokenStructure
+  {
+    ValidTokens TokenType;
+    std::vector<ValidTokens> Arguments = {};
+  };
 
-  std::map<std::string, ValidTokens> Token_Map = {
+  std::map<std::string, TokenStructure> Token_Map = {
     // Operators
-    {"+",   ValidTokens::addition},
+    {"+",   {.TokenType = ValidTokens::addition, .Arguments = { ValidTokens::number_literal, ValidTokens::number_literal } }},
     {"++",   ValidTokens::increment },
     {"-",   ValidTokens::subtraction},
     {"--",   ValidTokens::decrement},

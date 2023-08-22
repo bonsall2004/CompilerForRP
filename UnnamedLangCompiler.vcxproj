@@ -25,7 +25,7 @@
     <ClCompile Include="Grammar.cpp" />
     <ClCompile Include="LangDef.cpp" />
     <ClCompile Include="Parser.cpp" />
-    <ClCompile Include="Tokenizer.cpp" />
+    <ClCompile Include="Lexer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Errors.h" />

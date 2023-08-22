@@ -54,7 +54,7 @@
     <ClCompile Include="entry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tokenizer.cpp">
+    <ClCompile Include="Lexer.cpp">
       <Filter>Source Files\Lexer</Filter>
     </ClCompile>
     <ClCompile Include="Grammar.cpp">

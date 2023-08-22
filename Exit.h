@@ -8,5 +8,6 @@ class Exit : public Default
     .ArgCount = 1,
     .Arguments = { Grammar::ValidTokens::int_literal }
   };
+
   std::string GenerateAssembly(std::vector<Token> Arguments) override;
 };

@@ -1,9 +1,9 @@
-#include "Tokenizer.h"
+#include "Lexer.h"
 #include <cctype>
 
-Tokenizer::Tokenizer(std::string src) : m_src(std::move(src)) {}
+Lexer::Lexer(std::string src) : m_src(std::move(src)) {}
 
-std::vector<Token> Tokenizer::Tokenize()
+std::vector<Token> Lexer::Tokenize()
 {
   std::vector<Token> tokens;
   std::string buffer;
@@ -227,12 +227,12 @@ std::vector<Token> Tokenizer::Tokenize()
   return tokens;
 }
 
-char Tokenizer::consume()
+char Lexer::consume()
 {
   return m_src.at(m_index++);
 }
 
-std::optional<char> Tokenizer::peek(int ahead) const
+std::optional<char> Lexer::peek(int ahead) const
 {
   if (((int32_t)ahead + (int32_t)m_index) > m_src.length())
   {

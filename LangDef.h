@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include "Grammar.h"
-#include "Tokenizer.h"
+#include "Lexer.h"
 
 struct TokenStructure
 {

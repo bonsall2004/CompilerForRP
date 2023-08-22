@@ -11,14 +11,14 @@ struct Token
   std::optional<std::string> Value;
 };
 
-class Tokenizer
+class Lexer
 {
 private:
   const std::string m_src;
   int m_index = 0;
 
 public:
-  explicit Tokenizer(std::string src);
+  explicit Lexer(std::string src);
   std::vector<Token> Tokenize();
   char consume();
   std::optional<char> peek(int ahead = 1) const;

@@ -19,14 +19,8 @@
     <Filter Include="Header Files\Grammar">
       <UniqueIdentifier>{1675ab5c-a318-497b-b00c-08be7dc6f667}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Tokenizer">
-      <UniqueIdentifier>{84659a89-09aa-4f08-97f0-5196a6bbb420}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Parser">
       <UniqueIdentifier>{7471a403-843f-4db6-b129-aceb786cb222}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Tokenizer">
-      <UniqueIdentifier>{fdedd49d-1ff5-430f-afc8-dbd2a06e670c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Grammar">
       <UniqueIdentifier>{61a61007-c7ac-4940-b513-6fdb5d249629}</UniqueIdentifier>
@@ -49,13 +43,19 @@
     <Filter Include="Source Files\Language\Invokable">
       <UniqueIdentifier>{b09e599d-b6c1-4895-a4f1-1b4a504b1d5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Lexer">
+      <UniqueIdentifier>{84659a89-09aa-4f08-97f0-5196a6bbb420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lexer">
+      <UniqueIdentifier>{fdedd49d-1ff5-430f-afc8-dbd2a06e670c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="entry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tokenizer.cpp">
-      <Filter>Source Files\Tokenizer</Filter>
+      <Filter>Source Files\Lexer</Filter>
     </ClCompile>
     <ClCompile Include="Grammar.cpp">
       <Filter>Source Files\Grammar</Filter>
@@ -80,8 +80,8 @@
     <ClInclude Include="Grammar.h">
       <Filter>Header Files\Grammar</Filter>
     </ClInclude>
-    <ClInclude Include="Tokenizer.h">
-      <Filter>Header Files\Tokenizer</Filter>
+    <ClInclude Include="Lexer.h">
+      <Filter>Header Files\Lexer</Filter>
     </ClInclude>
     <ClInclude Include="Parser.h">
       <Filter>Header Files\Parser</Filter>

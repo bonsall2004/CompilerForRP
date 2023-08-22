@@ -4,7 +4,7 @@
 #include <string>
 #include <chrono>
 #include "Errors.h"
-#include "Tokenizer.h"
+#include "Lexer.h"
 
 bool readFileContents(const std::string& filePath, std::string& fileContents)
 {
@@ -48,8 +48,8 @@ int main(int argc, char* argv[])
  
   auto tokenizeStartTime = std::chrono::high_resolution_clock::now();
 
-  Tokenizer _tokenizer(fileContents);
-  std::vector<Token> _tokens = _tokenizer.Tokenize();
+  Lexer _Lexer(fileContents);
+  std::vector<Token> _tokens = _Lexer.Tokenize();
 
   auto tokenizeEndTime = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double> tokenizeTimeDuration = tokenizeEndTime - tokenizeStartTime;

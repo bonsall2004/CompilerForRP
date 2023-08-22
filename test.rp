@@ -1,1 +1,3 @@
 return "hello";
+return 10;
+return 13.2;
